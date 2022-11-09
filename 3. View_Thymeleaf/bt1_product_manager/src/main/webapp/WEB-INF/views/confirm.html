@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/layout::head}">
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>Confirm</h3>
+<h4>Are you sure?</h4>
+<a th:href="@{/product}"><button>Cancel</button></a>
+<a th:href="@{/product/confirm/{id}(id=${id})}"><button>Confirm</button></a>
+<footer th:replace="~{/layout::footer}"></footer>
+</body>
+</html>
